@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="about.html" style="display: block; margin-bottom: 20px;">
+            О компании
+        </a>
+        <a href="area-of-use.html" style="display: block; margin-bottom: 20px;">
+            Области применения
+        </a>
+        <a href="area-of-use2.html" style="display: block; margin-bottom: 20px;">
+            Области применения 2
+        </a>
+        <a href="area-of-use3.html" style="display: block; margin-bottom: 20px;">
+            Области применения 3
+        </a>
+        <a href="products.html" style="display: block; margin-bottom: 20px;">
+            Продукция
+        </a>
+        <a href="products2.html" style="display: block; margin-bottom: 20px;">
+            Продукция 2
+        </a>
+        <a href="products3.html" style="display: block; margin-bottom: 20px;">
+            Продукция 3
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Услуги
+        </a>
+        <a href="services2.html" style="display: block; margin-bottom: 20px;">
+            Услуги 2
+        </a>
+        <a href="services3.html" style="display: block; margin-bottom: 20px;">
+            Услуги 3
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="news.html" style="display: block; margin-bottom: 20px;">
+            Новости
+        </a>
+        <a href="news-item.html" style="display: block; margin-bottom: 20px;">
+            Новости 2
+        </a>
+        <a href="career-main.html" style="display: block; margin-bottom: 20px;">
+            Карьера
+        </a>
+        <a href="career.html" style="display: block; margin-bottom: 20px;">
+            Карьера 2
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на продукцию
+        </button>
+        <button data-modal="reqModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на продукцию 2
+        </button>
+        <button data-modal="vacancyModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на вакансию
+        </button>
+        <button data-modal="vacancyModal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Заявка на вакансию 2
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <button class="close-btn _close-cookie">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+            </svg>
+        </button>
+        <div class="cookie-modal__content">
+            <div class="cookie-modal__title text20 semi-bold-text">
+                Мы используем cookie-файлы
+            </div>
+            <div class="text desc4">
+                <p>АО «Полема» использует cookie-файлы для улучшения работы и пользования сайта http://www.polema.net/.</p>
+                <p>
+                    Более подробную информацию о Политике АО «Полема» по работе с cookie-файлами можно найти здесь, о Политике обработки и обеспечения безопасности персональных данных в АО «Полема» можно узнать <a href="">здесь.</a>
+                </p>
+                <p>Продолжая пользоваться сайтом http://www.polema.net/, вы подтверждаете, что были проинформированы об использовании cookie-файлов сайтом http://www.polema.net/ и согласны с Политикой АО «Полема» по работе с cookie-файлами.</p>
+                <p>Вы можете отключить cookie-файлы в настройках вашего браузера.</p>
+            </div>
+        </div>
+        <div class="cookie-modal__nav">
+            <button class="_close-cookie cookie-modal__btn m-btn m-btn-blue">
+                <span>Принять</span>
+                <img class="_right" src="img/arrow-right2.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <button class="close-btn _close-cookie">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+            </svg>
+        </button>
+        <div class="cookie-modal__content">
+            <div class="cookie-modal__title text20 semi-bold-text">
+                Мы используем cookie-файлы
+            </div>
+            <div class="text desc4">
+                <p>АО «Полема» использует cookie-файлы для улучшения работы и пользования сайта http://www.polema.net/.</p>
+                <p>
+                    Более подробную информацию о Политике АО «Полема» по работе с cookie-файлами можно найти здесь, о Политике обработки и обеспечения безопасности персональных данных в АО «Полема» можно узнать <a href="">здесь.</a>
+                </p>
+                <p>Продолжая пользоваться сайтом http://www.polema.net/, вы подтверждаете, что были проинформированы об использовании cookie-файлов сайтом http://www.polema.net/ и согласны с Политикой АО «Полема» по работе с cookie-файлами.</p>
+                <p>Вы можете отключить cookie-файлы в настройках вашего браузера.</p>
+            </div>
+        </div>
+        <div class="cookie-modal__nav">
+            <button class="_close-cookie cookie-modal__btn m-btn m-btn-blue">
+                <span>Принять</span>
+                <img class="_right" src="img/arrow-right2.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

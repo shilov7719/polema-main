@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Водитель грузового автомобиля</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header id="header" class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__inner">
+                        <a href="" class="header__logo">
+                            <img class="_view1" src="img/logo.png" alt="">
+                            <img class="_view2" src="img/logo3.png" alt="">
+                        </a>
+
+                        <div class="header-action _flex">
+                            <button class="desktop-burger">
+                                <span class="desktop-burger__icon">
+                        <svg class="_view1" width="31" height="17" viewBox="0 0 31 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1H31" stroke="white" stroke-width="2"/>
+                        <path d="M0 8.36841H31" stroke="white" stroke-width="2"/>
+                        <path d="M0 15.7368H31" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <svg class="_view2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M13.9442 12L22.5972 3.34792C23.1343 2.81079 23.1343 1.93994 22.5972 1.40285C22.06 0.865717 21.1892 0.865717 20.6521 1.40285L12 10.0558L3.34792 1.40285C2.81079 0.865717 1.93994 0.865717 1.40285 1.40285C0.86576 1.93998 0.865717 2.81083 1.40285 3.34792L10.0558 12L1.40285 20.6521C0.865717 21.1892 0.865717 22.0601 1.40285 22.5972C1.93998 23.1342 2.81083 23.1343 3.34792 22.5972L12 13.9442L20.652 22.5972C21.1892 23.1343 22.06 23.1343 22.5971 22.5972C23.1342 22.06 23.1342 21.1892 22.5971 20.6521L13.9442 12Z" fill="#fff"/>
+                    </svg>
+                    </span>
+                                <span class="desktop-burger__title text12">
+                        меню
+                    </span>
+                            </button>
+
+
+                            <div class="lang">
+                                <a href="" class="lang__item _active">RU</a>
+                                <span class="lang__split"></span>
+                                <a href="" class="lang__item">EN</a>
+                            </div>
+                        </div>
+
+
+
+                        <button class="burger">
+                            <svg class="_view1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22.9565 10.9565H1.04346C0.467168 10.9565 0 11.4237 0 12C0 12.5763 0.467168 13.0434 1.04346 13.0434H22.9565C23.5328 13.0434 24 12.5763 24 12C24 11.4237 23.5328 10.9565 22.9565 10.9565ZM1.04346 5.73911H22.9565C23.5328 5.73911 24 5.27194 24 4.69565C24 4.11936 23.5328 3.65219 22.9565 3.65219H1.04346C0.467168 3.65219 0 4.11936 0 4.69565C0 5.27194 0.467168 5.73911 1.04346 5.73911ZM22.9565 18.2608H1.04346C0.467168 18.2608 0 18.7281 0 19.3044C0 19.8806 0.467168 20.3478 1.04346 20.3478H22.9565C23.5328 20.3478 24 19.8806 24 19.3044C24 18.7281 23.5328 18.2608 22.9565 18.2608Z" fill="#2C2C2C" />
+                            </svg>
+                            <svg class="_view2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M13.9442 12L22.5972 3.34792C23.1343 2.81079 23.1343 1.93994 22.5972 1.40285C22.06 0.865717 21.1892 0.865717 20.6521 1.40285L12 10.0558L3.34792 1.40285C2.81079 0.865717 1.93994 0.865717 1.40285 1.40285C0.86576 1.93998 0.865717 2.81083 1.40285 3.34792L10.0558 12L1.40285 20.6521C0.865717 21.1892 0.865717 22.0601 1.40285 22.5972C1.93998 23.1342 2.81083 23.1343 3.34792 22.5972L12 13.9442L20.652 22.5972C21.1892 23.1343 22.06 23.1343 22.5971 22.5972C23.1342 22.06 23.1342 21.1892 22.5971 20.6521L13.9442 12Z" fill="#2C2C2C" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__inner">
+                        <div class="header-search">
+                            <input type="text" placeholder="Что вы ищите?">
+                            <button class="header-search__btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                    <path d="M19.5002 20L14.8761 15.6286C14.3136 16.1079 13.6667 16.4787 12.9354 16.7412C12.2042 17.0037 11.4692 17.135 10.7304 17.135C8.92893 17.135 7.40418 16.5114 6.15618 15.2641C4.90818 14.0169 4.28418 12.4925 4.28418 10.691C4.28418 8.88949 4.90743 7.36436 6.15393 6.11561C7.40043 4.86686 8.92443 4.24174 10.7259 4.24024C12.5274 4.23874 14.0529 4.86274 15.3024 6.11224C16.5519 7.36174 17.1767 8.88686 17.1767 10.6876C17.1767 11.4691 17.0383 12.2255 16.7616 12.9567C16.4848 13.688 16.1211 14.3135 15.6703 14.8332L20.5002 19L19.5002 20ZM10.7316 16.0089C12.2241 16.0089 13.4841 15.4951 14.5116 14.4676C15.5391 13.4401 16.0528 12.1797 16.0528 10.6865C16.0528 9.19324 15.5391 7.93324 14.5116 6.90649C13.4841 5.87974 12.2241 5.36599 10.7316 5.36524C9.23905 5.36449 7.97868 5.87824 6.95043 6.90649C5.92218 7.93474 5.40843 9.19474 5.40918 10.6865C5.40993 12.1782 5.92368 13.4382 6.95043 14.4665C7.97718 15.4947 9.23718 16.0085 10.7304 16.0077" fill="#343434" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <nav class="nav">
+                            <ul>
+                                <li class="menu-item">
+                                    <a href="">Главная</a>
+                                </li>
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="">О компании</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">История</a></li>
+                                        <li><a href="">Преимущества</a></li>
+                                        <li><a href="">Документы</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="">Продукция</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Виды продукции</a></li>
+                                        <li><a href="">Области применения</a></li>
+                                        <li><a href="">Услуги</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">Карьера</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">Пресс-центр</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+            <div class="page-top">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Карьера</a></li>
+                            <li><a>Водитель грузового автомобиля</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career">
+                <div class="container">
+                    <div class="career__inner">
+                        <h1 class="career__title h1 gradient-text">водитель грузового автомобиля</h1>
+                        <div class="career__wrap _tabs-parent">
+                            <div class="tabs-head">
+                                <div class="_tab _active" data-tab="_tab1">
+                                    <span>Обязанности</span>
+                                </div>
+                                <div class="_tab" data-tab="_tab2">
+                                    <span>Наши ожидания</span>
+                                </div>
+                                <div class="_tab" data-tab="_tab3">
+                                    <span>Условия работы</span>
+                                </div>
+                            </div>
+                            <div class="career__content">
+                                <div class="tab-content _tab1 _active">
+                                    <h2 class="career__subtitle h2">обязанности</h2>
+                                    <div class="career__text">
+                                        <p>— Работа на токарных двухшпиндельных станках DMG CLX 350</p>
+                                        <p>— Многостаночное обслуживание (2 станка)</p>
+                                        <p>— Ведение процесса обработки с пульта управления сложных деталей с большим числом переходов, требующих перестановок деталей и комбинированного крепления их по 6–7 квалитетам на станках с программным управлением</p>
+                                        <p>— Осуществление обработки пробных деталей после наладки</p>
+                                        <p>— Предоставление мастеру полной и достоверной информации о выполненной работе</p>
+                                    </div>
+                                    <button class="career__btn m-btn m-btn-blue">
+                                        <span>Откликнуться</span>
+                                        <img src="img/arrow-diagonal.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="tab-content _tab2">
+                                    <h2 class="career__subtitle h2">Наши ожидания</h2>
+                                    <div class="career__items">
+                                        <div class="career__item">
+                                            <div class="career__item-title">
+                                                <span>Опыт работы</span>
+                                            </div>
+                                            <div class="career__item-text">
+                                                <p>Рассматриваем кандидатов различной квалификации (как с опытом, так и без опыта работы).</p>
+                                            </div>
+                                        </div>
+                                        <div class="career__item">
+                                            <div class="career__item-title">
+                                                <span>Образование</span>
+                                            </div>
+                                            <div class="career__item-text">
+                                                <p>Среднее образование</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="career__btn m-btn m-btn-blue">
+                                        <span>Откликнуться</span>
+                                        <img src="img/arrow-diagonal.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="tab-content _tab3">
+                                    <h2 class="career__subtitle h2">Условия работы</h2>
+                                    <div class="career__text">
+                                        <p>— график работы: с 8:00 до 16:30</p>
+                                        <p>— стабильная своевременная заработная плата в полном размере, независимо от периода испытательного срока, стажировки или обучения</p>
+                                        <p>— оформление по ТК РФ (оплата больничных и отпусков)</p>
+                                        <p>— ежегодная индексация оплаты труда</p>
+                                        <p>— обучение на производстве</p>
+                                        <p>— возможность обучения и повышения квалификации</p>
+                                        <p>— обеспечение спец. одеждой и СИЗ</p>
+                                        <p>— прохождение медкомиссии за счёт компании</p>
+                                        <p>— корпоративный транспорт (Пролетарский, Зареченский, Советский, Центральный районы, Болохово) + городской транспорт № 13, 24</p>
+                                        <p>— наличие комфортабельной столовой на территории предприятия (быстрое обслуживание, демократичные цены)</p>
+                                        <p>— предоставление бесплатного льготного питания</p>
+                                        <p>— бесплатное посещение спортзала</p>
+                                        <p>— собственная база отдыха</p>
+                                        <p>— материальна помощь и социальные выплаты в различных жизненных ситуациях</p>
+                                        <p>— подарки к Новому году для детей сотрудников от 0 до 14 лет</p>
+                                        <p>— возможность дополнительного заработка: приведи друга — получи выплату 25 000 рублей</p>
+                                    </div>
+                                    <button class="career__btn m-btn m-btn-blue">
+                                        <span>Откликнуться</span>
+                                        <img src="img/arrow-diagonal.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col">
+                        <a href="" class="footer__logo">
+                            <img src="img/logo2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__col2">
+                        <a href="" class="footer__title">О компании</a>
+                        <ul class="footer__links">
+                            <li><a href="">История</a></li>
+                            <li><a href="">Преимущества</a></li>
+                            <li><a href="">Документы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col3">
+                        <a href="" class="footer__title">Продукция</a>
+                        <ul class="footer__links">
+                            <li><a href="">Области применения</a></li>
+                            <li><a href="">Услуги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col4">
+                        <a href="" class="footer__title">контакты</a>
+                        <a href="" class="footer__title">пресс-центр</a>
+                        <a href="" class="footer__title">карьера</a>
+                    </div>
+                    <a href="#header" class="footer__scroll-top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="0.5" y="39.5" width="39" height="39" rx="19.5" transform="rotate(-90 0.5 39.5)" stroke="white" />
+                            <path d="M14.1846 23.0762L20.0004 17.6025L25.8161 23.0762" stroke="white" stroke-width="1.36842" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__socials">
+                        <a href="" class="footer__socials-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M1.75 1.75C3.31137e-07 3.51667 0 6.34167 0 12V13C0 18.65 3.31137e-07 21.475 1.75 23.25C3.51667 25 6.34167 25 12 25H13C18.65 25 21.475 25 23.25 23.25C25 21.4833 25 18.6583 25 13V12C25 6.35 25 3.525 23.25 1.75C21.4833 3.31137e-07 18.6583 0 13 0H12C6.35 0 3.525 3.31137e-07 1.75 1.75ZM4.21667 7.60833H7.08333C7.175 12.375 9.275 14.3917 10.9417 14.8083V7.60833H13.6333V11.7167C15.275 11.5417 17.0083 9.66667 17.5917 7.6H20.275C20.056 8.66975 19.6189 9.68287 18.9909 10.5761C18.3629 11.4694 17.5575 12.2236 16.625 12.7917C17.6659 13.3095 18.5851 14.0423 19.322 14.9415C20.0589 15.8407 20.5967 16.886 20.9 18.0083H17.9417C17.3083 16.0333 15.725 14.5 13.6333 14.2917V18.0083H13.3C7.6 18.0083 4.35 14.1083 4.21667 7.60833Z" fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__c">
+                        © 2024 АО «ПОЛЕМА» <br>Все права защищены.
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="reqModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на продукцию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg _error">
+                        <input type="text" placeholder="Название организации *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Контактное лицо *">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Содержание заявки *"></textarea>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form ">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="modal" id="vacancyModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Заявка на вакансию
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+                </svg>
+            </button>
+            <form class="modal-form _success">
+                <div class="modal-form__fields">
+                    <div class="fg">
+                        <input type="text" placeholder="Фамилия*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Имя*">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Отчество*">
+                    </div>
+                    <div class="fg">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон *">
+                    </div>
+                    <div class="fg">
+                        <input type="text" placeholder="Город проживания">
+                    </div>
+                    <div class="fg">
+                        <textarea placeholder="Сопроводительное письмо"></textarea>
+                    </div>
+                </div>
+                <div class="file-input">
+                    <button class="file-input__btn">
+                        <input type="file">
+                        <span>Выберите файл</span>
+                    </button>
+                    <div class="file-input__title text15">
+                        Прикрепить резюме
+                    </div>
+                    <div class="file-input__output">
+                        <span class="text15"></span>
+                    </div>
+                </div>
+                <div class="m-check">
+                    <input type="checkbox">
+                    <label>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                </div>
+                <div class="modal-form__hint _mt10">
+                    <div class="desc4 gray-text800">
+                        * Поле, обязательное для заполнения
+                    </div>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-blue">
+                    <span>Отправить</span>
+                    <img class="_right" src="img/arrow-right2.svg" alt="">
+                </button>
+                <div class="modal-form__message">
+                    <span class="text20">
+            Заявка успешно отправлена
+        </span>
+                    <img src="img/check2.svg" alt="">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="cookie-modal _active">
+        <button class="close-btn _close-cookie">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1L1 18" stroke="black" />
+            </svg>
+        </button>
+        <div class="cookie-modal__content">
+            <div class="cookie-modal__title text20 semi-bold-text">
+                Мы используем cookie-файлы
+            </div>
+            <div class="text desc4">
+                <p>АО «Полема» использует cookie-файлы для улучшения работы и пользования сайта http://www.polema.net/.</p>
+                <p>
+                    Более подробную информацию о Политике АО «Полема» по работе с cookie-файлами можно найти здесь, о Политике обработки и обеспечения безопасности персональных данных в АО «Полема» можно узнать <a href="">здесь.</a>
+                </p>
+                <p>Продолжая пользоваться сайтом http://www.polema.net/, вы подтверждаете, что были проинформированы об использовании cookie-файлов сайтом http://www.polema.net/ и согласны с Политикой АО «Полема» по работе с cookie-файлами.</p>
+                <p>Вы можете отключить cookie-файлы в настройках вашего браузера.</p>
+            </div>
+        </div>
+        <div class="cookie-modal__nav">
+            <button class="_close-cookie cookie-modal__btn m-btn m-btn-blue">
+                <span>Принять</span>
+                <img class="_right" src="img/arrow-right2.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
